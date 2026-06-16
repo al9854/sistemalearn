@@ -44,17 +44,19 @@
 
 body {
   font-family: var(--font);
-  background: var(--bg-tertiary);
-  color: var(--text-primary);
   font-size: 14px;
   line-height: 1.5;
+  /* quita el background y color de aquí */
 }
 
 button { cursor: pointer; font-family: var(--font); }
 input, select, textarea { font-family: var(--font); }
 
 /* ── LAYOUT ── */
-.app { display: flex; flex-direction: column; min-height: 100vh; }
+.app {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
 
 /* ── TOPBAR ── */
 .topbar {
